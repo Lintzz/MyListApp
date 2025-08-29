@@ -10,7 +10,7 @@ const { autoUpdater } = require("electron-updater");
 const path = require("path");
 const fs = require("fs");
 const log = require("electron-log");
-require("dotenv").config();
+require("dotenv").config({ path: path.join(app.getAppPath(), ".env") });
 
 autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = "info";

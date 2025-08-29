@@ -23,13 +23,14 @@
   },
   "build": {
     "appId": "com.seu-nome.minhalista",
-    "productName": "Minha-Lista",
-    "artifactName": "minha-lista-setup-${version}.${ext}",
+    "productName": "MyList",
+    "artifactName": "MyList-setup-${version}.${ext}",
     "files": [
       "main.js",
       "preload.js",
       "src/**/*",
-      "package.json"
+      "package.json",
+      ".env"
     ],
     "win": {
       "target": "nsis",
